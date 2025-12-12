@@ -19,32 +19,36 @@
 .container {
     background-color: rgba(0, 0, 0, 0.596);
     width: 80%;
-    height: 90vh;
+    height: 95vh;
     display: grid;
-    grid-template-columns: repeat(1, 50%);
+    grid-template-columns: repeat(1, 100%);
     border-radius: 40px;
 }
 
-.box{
-    display: grid;
-    grid-template-columns: repeat(2,100%);
+.box {
     color: white;
     margin: 2rem;
-    gap: 3rem;
 }
 
-.boxLeft{
+.boxLeft {
     display: flex;
     flex-direction: column;
+    
+
 }
 
-.search{
-    display: flex;
-    gap: 10px;
+.inputSearch {
+    width: 80%;
 }
-.search input{
+
+.search {
+    display: flex;
+    gap: 20px;
+}
+
+.search input {
     height: 3rem;
-    width: 90%;
+    width: 100%;
     border-radius: 20px;
     border: none;
     background-color: rgba(0, 0, 0, 0.397);
@@ -53,9 +57,9 @@
     font-weight: 900;
 }
 
-.infoWether{
-    background-color:rgba(0, 0, 0, 0.397);
-    height: 65vh;
+.infoWether {
+    background-color: rgba(0, 0, 0, 0.397);
+    height: 62vh;
     margin-top: 10px;
     border-radius: 20px;
     display: flex;
@@ -63,24 +67,106 @@
     align-items: center;
     padding: 2rem;
 }
-.btnSearch{
+
+.btnSearch {
     background-color: rgba(0, 0, 0, 0.397);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
     border: none;
 }
-.infoWether h1{
+
+.infoWether h1 {
     margin-top: 10px;
 }
-.temperature{
-    font-size: 8rem;
+
+.temperature {
+    font-size: 6rem;
 }
-.infoWether img{
+
+.infoWether img {
     height: 10rem;
 
 }
-.cloudy{
-   margin-top: 3rem;
 
+.cloudy {
+    margin-top: 3rem;
+
+}
+
+.entreCity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.entreCity img {
+    width: 100%;
+    height: 20rem;
+}
+
+#alert {
+    color: red;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: 7px;
+}
+
+.boxRight {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    margin-top: 5rem;
+}
+
+.boxup,
+.boxdown {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.houre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.scroll::-webkit-scrollbar {
+    height: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.item {
+    min-width: 70px;
+    background: rgba(255, 255, 255, 0.18);
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.item img {
+    width: 35px;
+    margin-top: 5px;
+}
+
+hr{
+    margin-top: 10px;
 }
